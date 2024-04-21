@@ -1,8 +1,6 @@
 # Database-NOSQL-Project
 
-# MongoDB Query Examples
-
-This repository contains MongoDB query examples for various analytical tasks. Each query is designed to answer specific questions related to the database's data, such as vendor registration, customer analysis, revenue tracking, and database optimization.
+# MongoDB Queries
 
 ## Queries Overview
 
