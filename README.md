@@ -11,7 +11,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     db.VendorAuthentication.countDocuments()
     ```
 
-2. **Number of active vs inactive vendors this month**
+#### 2. **Number of active vs inactive vendors this month**
     ```mongodb
     db.vendor.aggregate([
     {
@@ -45,7 +45,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-3. **Total number of customers registered from the beginning**
+#### 3. **Total number of customers registered from the beginning**
     ```mongodb
     db.vendor.aggregate([
     {
@@ -70,7 +70,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-4. **Vendor with the most number of listings**
+#### 4. **Vendor with the most number of listings**
     ```mongodb
     db.vendor.aggregate([
     {
@@ -103,7 +103,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-5. **Customer with the most number of orders**
+#### 5. **Customer with the most number of orders**
     ```mongodb
     db.order.aggregate([
     {
@@ -155,7 +155,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-6. **Top 5 vendors by revenue by month (January, February, March)**
+#### 6. **Top 5 vendors by revenue by month (January, February, March)**
     ```mongodb
     // Top 5 Vendors by Revenue by Jan
 
@@ -424,7 +424,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-7. **Top 5 customers by revenue this year**
+#### 7. **Top 5 customers by revenue this year**
     ```mongodb
     db.order.aggregate([
     {
@@ -495,7 +495,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-8. **Revenue comparison between last month and the same month last year**
+#### 8. **Revenue comparison between last month and the same month last year**
     ```mongodb
     db.order.aggregate([
     {
@@ -571,7 +571,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-9. **Most expensive order among my orders**
+#### 9. **Most expensive order among my orders**
     ```mongodb
     db.order.aggregate([
     {
@@ -631,7 +631,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-10. **Total number of orders placed by a customer**
+#### 10. **Total number of orders placed by a customer**
     ```mongodb
     db.order.aggregate([
     {
@@ -657,7 +657,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-11. **Total historical spend with the business year to date**
+#### 11. **Total historical spend with the business year to date**
     ```mongodb
     db.order.aggregate([
     {
@@ -721,7 +721,7 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-12. **Customer expenditure trend chart**
+#### 12. **Customer expenditure trend chart**
     ```mongodb
     db.order.aggregate([
     {
@@ -780,14 +780,14 @@ This repository contains MongoDB query examples for various analytical tasks. Ea
     ]);
     ```
 
-13. **Size of the database**
+#### 13. **Size of the database**
     ```mongodb
     var stats = db.stats();
     var sizeInMB = stats.dataSize / (1024 * 1024);
     print(sizeInMB + " MB");
     ```
 
-14. **In any of above queries can you change your database design an reduce the cost of the query? (Database Optimization)**
+#### 14. **In any of above queries can you change your database design an reduce the cost of the query? (Database Optimization)**
     ```mongodb
     // Create indexes if not already present
     db.order.createIndex({ "cust_email": 1 });
