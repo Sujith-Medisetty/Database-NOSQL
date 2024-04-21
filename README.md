@@ -2,8 +2,6 @@
 
 # MongoDB Queries
 
-## Queries Overview
-
 #### 1. **How many vendors do you have registered?**
     ```mongodb
     db.VendorAuthentication.countDocuments()
